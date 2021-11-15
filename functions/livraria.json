@@ -1,0 +1,16 @@
+[
+    {
+        "titulo": "mobdick",
+        "ano": "1851",
+        "editora": "LANDMARK",
+        "preco": 35.59,
+        "estoque": 15
+    },
+    {
+        "titulo": "Hary Potter",
+        "ano": "1997",
+        "editora": "ROCCO",
+        "preco": 89.90,
+        "estoque": 99
+    }
+]

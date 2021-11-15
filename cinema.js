@@ -34,22 +34,22 @@ function adicionarFilmes(codigo, titulo, anoDeLancamento, filmeEstaEmCartaz) {
         emCartaz: filmeEstaEmCartaz,
 
     });
-    console.log("Filem Adicionado");
-    console.log(catalogo);
-}
-
-function buscarFilme() {
 
 }
 
+// function buscarFilme() {
 
-function alterarStatusEmCartaz() {
+// }
 
-}
+
+// function alterarStatusEmCartaz() {
+
+// }
 
 
 function listarTodosOsFilmes() {
     catalogo.forEach((item) => console.log(item.titulo + ", " + item.anoDeLancamento + ", Duração: " + item.duracao));
+
 }
 
 function listarTodosOsFilmesLongos() {
@@ -59,13 +59,14 @@ function listarTodosOsFilmesLongos() {
 }
 
 function listaTodosOsFilmes2() {
-    let filmeResumo = catalogo.map(item => {
+    let filmesResumo = catalogo.map(item => {
         return {
             resumo: item.titulo + ", " + item.anoDeLancamento + ". Duração " + item.duracao,
-            ...item
+            ...item,
+
         }
     });
-    filmeResumo.forEach(item = console.log(item.resumo))
+    filmesResumo.forEach(item => console.log(item.resumo))
 }
 
 function buscarFilmepeloCodigo(codigo) {
@@ -73,22 +74,25 @@ function buscarFilmepeloCodigo(codigo) {
     console.log(titulo)
 }
 
-function calcularFaturamento() {
-    //utilizar o reduce do array para calcular o total do faturamento
-}
+// function calcularFaturamento() {
+//     //utilizar o reduce do array para calcular o total do faturamento
+// }
 
 
 module.exports = {
     adicionarFilmes,
-    buscarFilme,
-    alterarStatusEmCartaz,
+    //buscarFilme,
+    //alterarStatusEmCartaz,
     listarTodosOsFilmes,
     listarTodosOsFilmesLongos,
     listaTodosOsFilmes2,
     buscarFilmepeloCodigo,
-    calcularFaturamento
+    // calcularFaturamento
 
 }
 
-buscarFilmepeloCodigo(1)
+// buscarFilmepeloCodigo(1)
 
+// const textoBoasVindas = "Ola´mundo, esse é o cinema DH"
+
+// module.exports = textoBoasVindas;
